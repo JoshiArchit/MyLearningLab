@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>TODO List</title>
+</head>
+
+<body>
+    <div class="app-header">
+        <h4>TODOlist</h4>
+        <button id="add-task">Add Task</button>
+    </div>
+
+    <div class="task-list">
+        <h4>My Tasks</h4>
+        <list id="tasks-container">
+
+        </list>
+    </div>
+
+    <dialog id="add-task-dialog">
+        <div id="add-task-container">
+            <div class="add-task-dialog-header">
+                <h3>Add a Task</h3>
+                <button id="close-add-task-dialog">X</button>
+            </div>
+
+            <form id="add-task-form">
+                Task Title: <input label="title" placeholder="Add task name" />
+                Task Description: <textarea label="description" placeholder="Add task description"></textarea>
+
+                <div class="task-form-buttons">
+                    <button id="add-task-form-submit">Add Task</button>
+                    <button type="button" id="add-task-form-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- Dialog to update task, includes status radio buttons -->
+    <dialog id="edit-task-dialog">
+        <div id="edit-task-container">
+            <div class="add-task-dialog-header">
+                <h3>Edit Task</h3>
+                <button type="button" id="close-edit-task-dialog">X</button>
+            </div>
+
+            <form id="edit-task-form">
+                <div id="edit-task-form-fields">
+                    <!--Populate fields from JS script-->
+                </div>
+
+                <div class="edit-task-form-buttons">
+                    <button id="edit-task-form-submit">Update Task</button>
+                    <button type="button" id="edit-task-form-cancel">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+</body>
+
+</html>

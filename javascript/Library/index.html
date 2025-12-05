@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Hello</title>
+</head>
+
+<body>
+    <h1>Library</h1>
+    <div class="header-bar">
+        <h3>Books</h3>
+        <button id="add-books-button">Add Books</button>
+    </div>
+    <div class="book-card-list">
+        <!-- Books added dynamically by JS -->
+    </div>
+
+    <dialog class="add-books-dialog">
+        <div class="add-books-dialog-header">
+            <button class="close-add-book-dialog">X</button>
+        </div>
+
+        <form class="add-books-form">
+            Book Name: <input label="title" placeholder="Add book name" />
+            Author Name: <input label="author" placeholder="Add author name" />
+            Pages: <input label="pages" placeholder="Add number of pages" />
+
+            <button id="add-books-form-submit">Add Book</button>
+        </form>
+    </dialog>
+</body>
+
+</html>

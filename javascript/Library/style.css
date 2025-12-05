@@ -1,0 +1,65 @@
+.body {
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.book-card-list {
+  display: grid;
+  /* This creates exactly 3 columns. Items 4, 5, 6 auto-wrap to row 2. */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-books-form {
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin: 2px 0px 2px 0px;
+  }
+}
+
+.book-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.close-add-book-dialog,
+.delete-book {
+  background-color: lightcoral;
+}
+
+.add-books-dialog-header {
+  display: flex;
+  justify-content: end;
+}
+
+#add-books-form-submit {
+  margin-top: 8px;
+}
+
+button {
+  background: lightgreen;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+}

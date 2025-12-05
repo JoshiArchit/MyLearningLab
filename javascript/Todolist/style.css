@@ -1,0 +1,99 @@
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#add-task-dialog {
+  border-radius: 5px;
+}
+
+#add-task-form,
+#edit-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.add-task-dialog-header {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+
+#add-task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-form-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#add-task-form-submit,
+#add-task-form-cancel {
+  width: 80px;
+}
+
+.edit-task-form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#edit-task-form-submit,
+#edit-task-form-cancel {
+  width: 90px;
+}
+
+#edit-task-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+h3 {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 25vw;
+  border-radius: 10px;
+  padding: 2vw;
+}
+
+#tasks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.task-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

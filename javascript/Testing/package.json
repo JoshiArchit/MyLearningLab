@@ -1,0 +1,13 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "Learning Project for learning JS testing",
+  "license": "ISC",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest testing_practice.test.js"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}
